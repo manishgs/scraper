@@ -1,0 +1,19 @@
+{
+    "name": "manishgs/scraper",
+    "description": "PHP package for webpage scraping",
+    "type": "application",
+    "require": {
+        "fabpot/goutte": "2.*"
+    },
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/manishgs/scraper",
+    "autoload": {
+        "psr-4": { "Scraper\\": "Scraper" }
+    },
+    "authors": [
+        {
+            "name": "Manish Gopal Singh",
+            "email": "manish.singh707@gmail.com"
+        }
+    ]
+}
