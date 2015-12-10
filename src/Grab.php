@@ -1,18 +1,39 @@
 <?php namespace Scraper;
 
+use Goutte\Client;
+
+/**
+ * Class Grab
+ * @package Scraper
+ */
 class Grab {
 
+    /**
+     * @var Client
+     */
     protected $client;
 
+    /**
+     * @var
+     */
     protected $url;
 
+    /**
+     * @var
+     */
     protected $crawler;
 
+    /**
+     * @var int
+     */
     protected $validImageSize = 200;
 
+    /**
+     *
+     */
     public function __construct()
     {
-        $this->client = new Goutte\Client();
+        $this->client = new Client();
     }
 
     /**
@@ -71,6 +92,9 @@ class Grab {
         );
     }
 
+    /**
+     * @return string
+     */
     public function getFavIcon()
     {
         $img = '';
