@@ -12,12 +12,16 @@ Add ``manishgs/scraper`` as a require dependency in your ``composer.json`` file:
 Usage
 -------
 ```php
-    use Scraper\Grab;
-    // create new Grab instance
-    $grab = new Grab();
-    // set Url    
-    $grab = $grab->setUrl('http://google.com');
-    // extract data
-    $article = $grab->getInfo();
-    print_r($article);
+use Scraper\Grab;
+
+// create new Grab 
+$grab = new Grab();
+
+// set Url    
+$grab = $grab->setUrl('http://google.com');
+
+// extract data
+$article = $grab->getInfo();
+
+print_r($article);
 ```
